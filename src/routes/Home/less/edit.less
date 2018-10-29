@@ -1,0 +1,160 @@
+:global {
+  @import './global.less';
+  @import './common.less';
+  @import './custom.less';
+  @import './content.less';
+  @import './nav.less';
+  @import './content0.less';
+  @import './content1.less';
+  @import './content2.less';
+  @import './content5.less';
+  @import './footer.less';
+  @import './point.less';
+  @import './edit.less';
+}
+
+.text{
+  z-index: 999;
+  h1 {
+    font-size: 32px;
+    line-height: 48px;
+    color: #fff;
+      z-index: 999;
+  }
+  p{
+        color: #fff;
+        font-size: 14px;
+          z-index: 999;
+
+  }
+}
+
+.bg{
+    &:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: #000;
+    opacity: 0.4;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+}
+.bg_text{
+  h1,p{color: #fff;z-index: 999;}
+}
+
+#content_2_0 {.bg; background-image: url(../../../assets/web_02.png); background-size: cover; background-position: center; border-width: 1px; border-style: dotted; background-attachment: scroll; background-blend-mode: normal; height: 100vh }
+
+#content_3_0 {.bg; background-image: url(../../../assets/web_03.png); background-size: cover; border-style: dotted; border-width: 1px; height: 100vh }
+
+#content_3_0-textWrapper{
+  left: 0%;
+  h1,p{color:#fff;z-index: 999;}
+}
+#content_2_0-textWrapper{
+  .text;right: 10%
+}
+
+#content_2_1-textWrapper{
+  right: 10%;
+  .text;
+}
+
+
+#content_2_1 {.bg; background-image: url(../../../assets/web_04.png); background-size: cover; height: 100vh }
+#content_3_1{
+  .text;
+}
+#content_3_1-title { color: #ffffff }
+#content_3_1-content { color: #ffffff; }
+#content_3_1 {.bg; background-image: url(../../../assets/web_05.png); background-size: cover; height: 100vh }
+#content_4_0-contentWrapper {
+  div {
+     h1 {
+    font-size: 18px;
+    color: rgba(0,0,0,0.85);
+  }
+  p{
+        color: rgba(0,0,0,0.65);
+        font-size: 14px;
+  }
+  }
+}
+#footer_1_0-logo p { font-size: 10px }
+.footer1 #footer_1_0-block1 ul li a { font-size: 10px }
+.footer1 #footer_1_0-block1 ul li a:hover { font-size: 10px }
+.footer1 #footer_1_0-block0 ul li a:hover { font-size: 10px }
+.footer1 #footer_1_0-block0 ul li a { font-size: 10px }
+.footer1 #footer_1_0-block2 ul li a { font-size: 10px }
+.footer1 #footer_1_0-block2 ul li a:hover { font-size: 10px }
+
+
+
+@media screen and (max-width: 767px) {
+  #content_2_0 { background-image: url(../../../assets/m_02.png);  .bg;}
+#content_3_0 { background-image: url(../../../assets/m_03.png); .bg;}
+
+#content_2_1 { background-image: url(../../../assets/m_04.png);  .bg;}
+#content_3_1 { 
+  background-image: url(../../../assets/m_05.png); 
+  top: 15%;
+  .bg;
+
+  .bg_text;
+
+}
+  #content_3_0-textWrapper{
+  left: 0%;
+    top:25%;
+    .bg_text;
+}
+#content_2_0-textWrapper{
+  right: 0%;
+  top:25%;
+      .bg_text;
+
+}
+
+#content_2_1-textWrapper{
+  right: 0%;
+  top:35%;
+      .bg_text;
+}
+#nav_0_0-logo { width: 100px; line-height: 64px }
+#content_0_0-content { font-size: 12px }
+#content_0_0-button { border-style: none }
+#content_2_0-title { font-size: 18px }
+#content_2_0-content { font-size: 10px; text-align: center; width: 100% }
+#content_3_0-title { font-size: 18px }
+#content_3_0-content { font-size: 8px; width: 100% }
+#content_2_1-title { font-size: 18px }
+#content_2_1-content { font-size: 8px }
+#content_3_1-title { font-size: 18px }
+#content_3_1-content { font-size: 8px }
+#content_4_0-title { font-size: 18px }
+.content2 #content_4_0-block0 .text h1 { font-size: 16px }
+.content2 #content_4_0-block0 .text p { font-size: 8px }
+.content2 #content_4_0-block1 .text h1 { font-size: 16px }
+.content2 #content_4_0-block1 .text p { font-size: 8px }
+.content2 #content_4_0-block2 .text h1 { font-size: 16px }
+.content2 #content_4_0-block3 .text h1 { font-size: 16px }
+.content2 #content_4_0-block3 .text p { font-size: 8px }
+.content2 #content_4_0-block4 .text h1 { font-size: 16px }
+.content2 #content_4_0-block4 .text p { font-size: 8px }
+.content2 #content_4_0-block5 .text h1 { font-size: 16px }
+.content2 #content_4_0-block5 .text p { font-size: 8px }
+#footer_1_0-logo p { font-size: 8px }
+#footer_1_0-block3 ul li.icon:hover { width: 20px }
+#footer_1_0-block3 ul li.icon { width: 20px }
+#footer_1_0-block3 { padding: 10px 10px 10px 10px }
+.footer1 #footer_1_0-block1 h2 { font-size: 16px }
+.footer1 #footer_1_0-block1 ul li a { font-size: 8px }
+.footer1 #footer_1_0-block0 h2 { font-size: 16px }
+.footer1 #footer_1_0-block0 ul li a { font-size: 8px }
+.footer1 #footer_1_0-block2 h2 { font-size: 16px }
+.footer1 #footer_1_0-block2 ul li a { font-size: 8px }
+#footer_1_0-content span { font-size: 6px }
+}
