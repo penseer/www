@@ -1,5 +1,6 @@
 {
   "entry": "src/index.js",
+  "outputPath":"docs",
   "disableCSSModules": true,
   "extraBabelPlugins": [
     "transform-runtime",
