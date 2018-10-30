@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TweenOne from 'rc-tween-one';
 import { Menu } from 'antd';
+import { cloneableGenerator } from 'redux-saga/utils';
+const navData = [{ menu: '首页', url: '/', target: '#' }, { menu: '相关推荐', target: 'https://zhuanlan.zhihu.com/p/48013533' }, { menu: '合作案例', target: 'https://zhuanlan.zhihu.com/p/48013620' }, { menu: '关于我们', url:'https://zhuanlan.zhihu.com/p/48012050' },{ menu: '联系我们', target: 'footer_1_0' }];
 
 const Item = Menu.Item;
 const mlogo = '../../assets/mlogo.png'
@@ -19,14 +21,27 @@ class Header extends React.Component {
       phoneOpen: !this.state.phoneOpen,
     });
   }
+  menuClick = (item, key, keyPath )=>{
+    console.log(item,key,keyPath)
+    console.log(navData[item.key])
+    let menu = navData[item.key];
+    //const docHeight = ReactDOM.findDOMNode().getBoundingClientRect().height;
+    //scrollScreen.init({ docHeight });
+    if (menu && menu.target) {
+      let anchorElement = document.getElementById(menu.target);
+      if (anchorElement) { anchorElement.scrollIntoView(); }
+      return;
+    }
+    if (menu && menu.url){
+      window.open(menu.url)
+    }
+  }
 
   render() {
     const props = { ...this.props };
     const isMobile = props.isMobile;
     delete props.isMobile;
-    const navData = { menu1: '首页', menu2: '相关推荐', menu3: '合作案例', menu4: '关于我们' };;
-    const navChildren = Object.keys(navData)
-      .map((key, i) => (<Item key={i}>{navData[key]}</Item>));
+    const navChildren = navData.map((key, i) => (<Item key={i}>{key.menu}</Item>));
     return (<TweenOne
       component="header"
       animation={{ opacity: 0, type: 'from' }}
@@ -71,6 +86,7 @@ class Header extends React.Component {
         <Menu
           mode="horizontal" defaultSelectedKeys={['0']}
           id={`${this.props.id}-menu`}
+            onClick={this.menuClick}
         >
           {navChildren}
         </Menu>

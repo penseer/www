@@ -1,0 +1,34 @@
+.content-template-wrapper {
+  width: 100%;
+  background: #fff;
+  height: 100vh;
+  border-color: #666;
+  position: relative;
+}
+.content-template-wrapper .content-template {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+.content-template-wrapper .content-template h1 {
+  font-size: 32px;
+  font-weight: normal;
+  color: #404040;
+  line-height: 48px;
+}
+.content-template-wrapper .content-template > p {
+  font-size: 12px;
+  margin: 20px auto;
+}
+.content-half-wrapper {
+  height: 50vh;
+}
+@media screen and (max-width: 767px) {
+  .content-template-wrapper .content-template {
+    /*h1, > p {
+        text-align: center;
+      }*/
+  }
+}
