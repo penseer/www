@@ -46,7 +46,7 @@ class Header extends React.Component {
     return (
 <TweenOne
       component="header"
-      style={{position: 'fixed'}}
+      style={{position: 'fixed',zIndex:99999}}
       animation={{ opacity: 0, type: 'from' }}
       {...props}
       >
