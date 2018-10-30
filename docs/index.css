@@ -5119,7 +5119,7 @@ h4 {
 }
 @media screen and (max-width: 767px) {
   .banner0:before {
-    background-image: url(/static/m_01.8c8a56e0.png);
+    background: url(/static/m_01.8c8a56e0.png) no-repeat center center;
   }
   .banner0-wrapper {
     width: 90%;
@@ -5411,7 +5411,7 @@ h4 {
   opacity: 1;
 }
 .footer1 > ul > li a {
-  color: #666;
+  color: #aaa;
   display: block;
 }
 .footer1 > ul > li a:hover {
@@ -5488,10 +5488,8 @@ h4 {
   z-index: 999;
 }
 #content_2_0 {
-  background-image: url(/static/web_02.3fa4e976.png);
+  background: url(/static/web_02.3fa4e976.png) no-repeat center center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   background-attachment: scroll;
   background-blend-mode: normal;
   height: 100vh;
@@ -5508,7 +5506,7 @@ h4 {
   height: 100%;
 }
 #content_3_0 {
-  background-image: url(/static/web_03.d1cc69ff.png);
+  background: url(/static/web_03.d1cc69ff.png) no-repeat center center;
   background-size: cover;
   height: 100vh;
 }
@@ -5562,7 +5560,7 @@ h4 {
   z-index: 999;
 }
 #content_2_1 {
-  background-image: url(/static/web_04.849dd287.png);
+  background: url(/static/web_04.849dd287.png) no-repeat center center;
   background-size: cover;
   height: 100vh;
 }
@@ -5598,7 +5596,7 @@ h4 {
   color: #ffffff;
 }
 #content_3_1 {
-  background-image: url(/static/web_05.ca7810b7.png);
+  background: url(/static/web_06.56c32c43.png) no-repeat center center;
   background-size: cover;
   height: 100vh;
 }
