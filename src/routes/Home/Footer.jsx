@@ -38,7 +38,7 @@ class Footer extends React.Component {
     const props = { ...this.props };
     const isMobile = props.isMobile;
     delete props.isMobile;
-    const logoContent = { img: 'http://img.hb.aicdn.com/b75d1e83b37d855308126539fd788ba1d776556251d7-hW8CeH', content: '提供科学、精准、高效的数字化营销服务。' };
+    const logoContent = { img: 'http://img.hb.aicdn.com/b75d1e83b37d855308126539fd788ba1d776556251d7-hW8CeH', content: '科学、精准、高效的数字化营销' };
     const dataSource = [
       { title: '友情链接', content: '好奇心日报\n少数派\n虎嗅网\nPingWest\nifanr\n', contentLink: 'http://www.qdaily.com/\nhttps://sspai.com/\nhttps://www.huxiu.com/\nhttps://www.pingwest.com/\nhttps://www.ifanr.com/\n' },
       { title: '相关推荐', content: '百度指数\n微博指数\n头条指数\n新榜\n西瓜数据', contentLink: 'https://index.baidu.com/#/\nhttp://data.weibo.com/index\nhttps://index.toutiao.com/\nhttps://www.newrank.cn/\nhttp://data.xiguaji.com/' },

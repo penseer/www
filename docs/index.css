@@ -5113,12 +5113,17 @@ h4 {
   margin-left: -12px;
   color: #FFF;
 }
+.mainLogo {
+  width: 80%;
+  height: auto;
+}
 @media screen and (max-width: 767px) {
   .banner0:before {
     background-image: url(/static/m_01.8c8a56e0.png);
   }
   .banner0-wrapper {
     width: 90%;
+    top: 20%;
   }
   .banner0-wrapper .title {
     width: 90%;
@@ -5487,8 +5492,6 @@ h4 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-width: 1px;
-  border-style: dotted;
   background-attachment: scroll;
   background-blend-mode: normal;
   height: 100vh;
@@ -5507,8 +5510,6 @@ h4 {
 #content_3_0 {
   background-image: url(/static/web_03.d1cc69ff.png);
   background-size: cover;
-  border-style: dotted;
-  border-width: 1px;
   height: 100vh;
 }
 #content_3_0:after {
@@ -5641,6 +5642,9 @@ h4 {
 .footer1 #footer_1_0-block2 ul li a:hover {
   font-size: 10px;
 }
+.content2-contentWrapper img {
+  margin-top: 10px;
+}
 @media screen and (max-width: 767px) {
   #content_2_0 {
     background-image: url(/static/m_02.eeee5604.png);
@@ -5735,12 +5739,6 @@ h4 {
     width: 100px;
     line-height: 64px;
   }
-  #content_0_0-content {
-    font-size: 12px;
-  }
-  #content_0_0-button {
-    border-style: none;
-  }
   #content_2_0-title {
     font-size: 18px;
   }
@@ -5752,53 +5750,14 @@ h4 {
   #content_2_1-title {
     font-size: 18px;
   }
-  #content_2_1-content {
-    font-size: 8px;
-  }
   #content_3_1-title {
     font-size: 18px;
   }
-  #content_3_1-content {
-    font-size: 8px;
-  }
   #content_4_0-title {
-    font-size: 18px;
+    display: none;
   }
-  .content2 #content_4_0-block0 .text h1 {
-    font-size: 16px;
-  }
-  .content2 #content_4_0-block0 .text p {
-    font-size: 8px;
-  }
-  .content2 #content_4_0-block1 .text h1 {
-    font-size: 16px;
-  }
-  .content2 #content_4_0-block1 .text p {
-    font-size: 8px;
-  }
-  .content2 #content_4_0-block2 .text h1 {
-    font-size: 16px;
-  }
-  .content2 #content_4_0-block3 .text h1 {
-    font-size: 16px;
-  }
-  .content2 #content_4_0-block3 .text p {
-    font-size: 8px;
-  }
-  .content2 #content_4_0-block4 .text h1 {
-    font-size: 16px;
-  }
-  .content2 #content_4_0-block4 .text p {
-    font-size: 8px;
-  }
-  .content2 #content_4_0-block5 .text h1 {
-    font-size: 16px;
-  }
-  .content2 #content_4_0-block5 .text p {
-    font-size: 8px;
-  }
-  #footer_1_0-logo p {
-    font-size: 8px;
+  #content_4_0-contentWrapper {
+    padding-top: 25px;
   }
   #footer_1_0-block3 ul li.icon:hover {
     width: 20px;
@@ -5808,26 +5767,5 @@ h4 {
   }
   #footer_1_0-block3 {
     padding: 10px 10px 10px 10px;
-  }
-  .footer1 #footer_1_0-block1 h2 {
-    font-size: 16px;
-  }
-  .footer1 #footer_1_0-block1 ul li a {
-    font-size: 8px;
-  }
-  .footer1 #footer_1_0-block0 h2 {
-    font-size: 16px;
-  }
-  .footer1 #footer_1_0-block0 ul li a {
-    font-size: 8px;
-  }
-  .footer1 #footer_1_0-block2 h2 {
-    font-size: 16px;
-  }
-  .footer1 #footer_1_0-block2 ul li a {
-    font-size: 8px;
-  }
-  #footer_1_0-content span {
-    font-size: 6px;
   }
 }

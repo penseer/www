@@ -34,14 +34,14 @@ class Content extends React.Component {
             key="title"
             id={`${props.id}-title`}
           >
-            <img width="100%" src="https://s1.ax1x.com/2018/10/29/ighSRs.png" />
+            <img className={`mainLogo`} src="https://s1.ax1x.com/2018/10/29/ighSRs.png" />
           </span>
           <p
             key="content"
             className="subtitle"
             id={`${props.id}-content`}
           >
-            科学、精准、高效的网络营销服务
+          科学、精准、高效的数字化营销
           </p>
           <Button type="ghost" key="button" id={`${props.id}-button`} onClick={() => this.scrollToAnchor('content_2_0') }>
             Learn More

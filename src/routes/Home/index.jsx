@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { enquireScreen } from 'enquire-js';
 import scrollScreen from 'rc-scroll-anim/lib/ScrollScreen';
+import { Affix } from 'antd';
 
 import Nav from './Nav';
 import Content0 from './Content0';
@@ -56,7 +57,7 @@ export default class Home extends React.Component {
 
   render() {
     const children = [
-      <Nav id="nav_0_0" key="nav_0_0" isMobile={this.state.isMobile}/>,
+      <Nav id="nav_0_0" key="nav_0_0" isMobile={this.state.isMobile} />,
       <Content0 id="content_0_0" key="content_0_0" isMobile={this.state.isMobile}/>,
       <Content1 id="content_2_0" key="content_2_0" isMobile={this.state.isMobile}/>,
       <Content2 id="content_3_0" key="content_3_0" isMobile={this.state.isMobile}/>,
