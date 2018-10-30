@@ -5064,7 +5064,7 @@ h4 {
   position: relative;
 }
 .banner0-wrapper .subtitle {
-  font-size: 20px;
+  font-size: 16px;
   margin-top: -20px;
 }
 .banner0-wrapper h1 {
@@ -5128,6 +5128,9 @@ h4 {
   .banner0-wrapper .title {
     width: 90%;
     left: 0;
+  }
+  .banner0 .subtitle {
+    font-size: 12px;
   }
   .banner0:before {
     background-attachment: inherit;
@@ -5621,6 +5624,7 @@ h4 {
 }
 #footer_1_0-logo p {
   font-size: 10px;
+  color: #aaa;
 }
 .footer1 #footer_1_0-block1 ul li a {
   font-size: 10px;
@@ -5705,6 +5709,9 @@ h4 {
   #content_3_1 p {
     color: #fff;
     z-index: 999;
+  }
+  #content_3_1-textWrapper {
+    top: 25%;
   }
   #content_3_0-textWrapper {
     left: 0%;
